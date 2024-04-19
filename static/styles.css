@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+main {
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+body {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#header-title {
+    font-family: "Chakra Petch", sans-serif;
+}
+
+#mountain-background {
+    display: block;
+    width: 75%;
+    height: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+    filter: blur(1px);
+}
+
+#description {
+    font-size:1.5em;
+    width: 40%;
+    margin-right: 2%;
+    color: white;
+    font-family: "Source Code Pro", sans-serif;
+}
+
+#container {
+    background-image: url("images/norris-niman-ePB2oGU8mb4-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 85%;
+    width: 85%;
+    box-shadow: 2px 2px 2px rgb(53, 53, 53);
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    gap: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-buttons {
+    padding: 20px;
+    font-size: larger;
+    font-family: "Chakra Petch", sans-serif;
+    border-radius: 2px;
+    border: none;
+    background-color: rgb(223, 223, 223);
+}
+
+.content-buttons:hover {
+    background-color: rgb(174, 174, 174);
+}
+
+a:link {
+  text-decoration: none;
+  color: black;  
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
