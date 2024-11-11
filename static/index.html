@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheets/styles.css" />
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/htmx.org"></script>
+    <title>Quote Master</title>
+  </head>
+  <body>
+    <nav>
+      <h1 id="title">Quote Master</h1>
+    </nav>
+    <div id="buttonWrapper">
+      <button hx-get="getAdvice" hx-target="#quoteBox">Advice</button>
+      <button hx-get="getAffirmation" hx-target="#quoteBox">Affirmation</button>
+      <button hx-get="getStoic" hx-target="#quoteBox">Stoic Quote</button>
+      <button hx-get="getUselessFact" hx-target="#quoteBox">
+        Useless Fact
+      </button>
+    </div>
+    <div id="quoteBox"></div>
+    <!-- <button id="copyButton" onclick="copyFunc()">Copy to clipboard</button> -->
+  </body>
+</html>
