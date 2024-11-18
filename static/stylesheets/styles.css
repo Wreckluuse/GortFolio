@@ -30,7 +30,7 @@ button {
   font-family: 'Kanit', sans-serif;
 }
 
-#docLink {
+.docLink {
   text-decoration: none;
   font-family: 'Geist Mono', monospace;
 }
