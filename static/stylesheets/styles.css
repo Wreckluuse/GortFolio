@@ -35,7 +35,7 @@ button {
   font-family: 'Geist Mono', monospace;
 }
 
-#docContainer {
+.docContainer {
   margin-left: 33%;
   margin-right: 33%;
   max-width: 50%;
